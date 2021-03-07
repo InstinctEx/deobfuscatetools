@@ -1,0 +1,4 @@
+Input file can be either a binary file or a .NET assembly;
+if is a .NET assembly will try to decompress all resource stream and if decompression is ok will save them to a file. 
+
+.NETZ (ZIP)

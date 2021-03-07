@@ -1,0 +1,4 @@
+A simple assembly wich will enumerate all assemblies and modules and will eventually send them to jit (right click on process and choose Inject Managed Assembly)
+File name: AssemblyLoad.exe
+Class name: AssemblyLoad.MyClass
+Method name: MyMethod

@@ -1,0 +1,14 @@
+C:\BodyRebuilder\BodyRebuilder\bin\Debug\BodyRebuilder.exe
+C:\BodyRebuilder\BodyRebuilder\bin\Debug\BodyRebuilder.pdb
+C:\BodyRebuilder\BodyRebuilder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.exe
+C:\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.pdb
+C:\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.MainForm.resources
+C:\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.csproj.GenerateResource.Cache
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\bin\Debug\BodyRebuilder.exe
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\bin\Debug\BodyRebuilder.pdb
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.MainForm.resources
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.csproj.GenerateResource.Cache
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.exe
+D:\PC_CONTENTS\MY_TOOLS\PatchingSamples&1Use\For PV Logiciels\BodyRebuilder\BodyRebuilder\obj\x86\Debug\BodyRebuilder.pdb

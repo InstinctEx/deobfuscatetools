@@ -1,0 +1,16 @@
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\bin\Debug\DeployLX.4.1.KeyGenerator.exe
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\bin\Debug\DeployLX.4.1.KeyGenerator.pdb
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX.4.1.KeyGenerator.csproj.GenerateResource.Cache
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX.4.1.KeyGenerator.exe
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX.4.1.KeyGenerator.pdb
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX41KeyGenerator.MainForm.resources
+C:\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX41KeyGenerator.GenerateActivationCode.resources
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLX.4.1.KeyGenerator.csproj.GenerateResource.Cache
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\bin\Debug\DeployLXKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\bin\Debug\DeployLXKeyGenerator.pdb
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.pdb
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.GenerateActivationCode.resources
+D:\PC_CONTENTS\MY_TOOLS\DeployLX.4.1.KeyGenerator\DeployLX.4.1.KeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.MainForm.resources

@@ -1,0 +1,8 @@
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.GenerateActivationCode.resources
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.MainForm.resources
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\APAKeyGenerator.csproj.GenerateResource.Cache
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\bin\Debug\APAKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\bin\Debug\APAKeyGenerator.pdb
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\APAKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\APAKeyGenerator\APAKeyGenerator\obj\x86\Debug\APAKeyGenerator.pdb

@@ -1,0 +1,6 @@
+1. AppFuscatorConstantFill
+2. AppFuscatorOperationCalc
+3. AppFuscatorLocalCalc
+4. AppFuscatorCalliRestore or AppFuscatorCalliRestore2
+
+The problems may come on AppFuscatorOperationCalc!

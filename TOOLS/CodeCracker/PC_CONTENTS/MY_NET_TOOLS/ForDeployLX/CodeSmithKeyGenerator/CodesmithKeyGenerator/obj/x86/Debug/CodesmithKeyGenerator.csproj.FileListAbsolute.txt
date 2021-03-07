@@ -1,0 +1,8 @@
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\bin\Debug\CodesmithKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\bin\Debug\CodesmithKeyGenerator.pdb
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.GenerateActivationCode.resources
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\DeployLXKeyGenerator.MainForm.resources
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\CodesmithKeyGenerator.csproj.GenerateResource.Cache
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\CodesmithKeyGenerator.exe
+D:\PC_CONTENTS\MY_TOOLS\ForDeployLX\CodesmithKeyGenerator\CodesmithKeyGenerator\obj\x86\Debug\CodesmithKeyGenerator.pdb

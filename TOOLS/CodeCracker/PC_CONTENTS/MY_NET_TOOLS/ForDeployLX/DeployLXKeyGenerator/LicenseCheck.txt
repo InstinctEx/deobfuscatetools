@@ -1,0 +1,147 @@
+
+	4. System.Windows.Forms.Form.ShowDialog (Source Unavailable)
+	5. DeployLX.Licensing.v4.SuperForm.T (Source Unavailable)
+	6. DeployLX.Licensing.v4.SuperFormPanel.ShowDialogWithEffects (Source Unavailable)
+	7. DeployLX.Licensing.v4.SuperFormPanel.ShowMessageBox (Source Unavailable)
+	8. DeployLX.Licensing.v4.SuperFormPanel.ShowMessageBox (Source Unavailable)
+	9. DeployLX.Licensing.v4.RegistrationPanel.HandleRegister (Source Unavailable)
+	10. DeployLX.Licensing.v4.RegistrationPanel.a (Source Unavailable)
+	11. System.Windows.Forms.Control.OnClick (Source Unavailable)
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+protected virtual void HandleRegister()
+{
+    if (this.ValidateForm())
+    {
+        LicenseValuesDictionary registrationInfo = this.GetRegistrationInfo();
+        RegistrationLimit limit = base.Limit as RegistrationLimit;
+        if (limit.FindTargetLicense(base.SuperForm.Context, this.field_968.Text) == null)
+        {
+            base.ShowMessageBox("E_InvalidSerialOrFailure", null, MessageBoxButtons.OK, MessageBoxIcon.Hand);
+        }
+        else if (!this.CheckUpgradeSerial(registrationInfo))
+        {
+            if (((RegistrationLimit) base.Limit).Servers.Count == 0)
+            {
+                this.field_976 = limit.RegisterAsync(base.field_1769.Context, true, registrationInfo, new EventHandler(this.method_1928));
+                this.field_969.Enabled = false;
+                this.Cursor = Cursors.WaitCursor;
+            }
+            else
+            {
+                base.ShowPanel(new RegisterOnlinePanel(limit, registrationInfo), new PanelResultHandler(this.method_1926));
+            }
+        }
+    }
+}
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+public SecureLicense FindTargetLicense(SecureLicenseContext context, string serialNumber)
+{
+    Check.NotNull(context, "context");
+    Check.NotNull(serialNumber, "serialNumber");
+    bool flag = false;
+    foreach (SecureLicense license in (IEnumerable) base.License.LicenseFile.Licenses)
+    {
+        if ((license.CanUnlockBySerial && (license != base.License)) && license.method_2175(context.LicensedType.FullName))
+        {
+            flag = true;
+            if (license.method_2117(context, serialNumber))
+            {
+                return license;
+            }
+        }
+    }
+    if (flag)
+    {
+        context.ReportError("E_InvalidSerialNumber", this, new object[] { serialNumber });
+        return null;
+    }
+    return base.License;
+}
+
+When wrong extendedLimit values are entered the above code is called 3 times
+- all return true!
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+internal bool method_2117(SecureLicenseContext param_2194, string param_2195)
+{
+    int num;
+    byte[] buffer;
+    if (!param_2194.CheckSerialNumber(param_2195, this.field_1023, out num, out buffer))
+    {
+        return false;
+    }
+    this.field_1023._seed = num;
+    this.field_1051 = buffer;
+    return true;
+}
+
+this.field_1023 is assined by:
+DeployLX.Licensing.v4.SecureLicense.method_2044() : Void
+
+this.field_1023 = new SerialNumberInfo(this);
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+public SerialNumberInfo(object owner)
+{
+    this._maxSeed = 0xffffff;
+    this._step = 1;
+    this._algorithm = CodeAlgorithm.SerialNumber;
+    this._flagNames = new StringCollection();
+    this._owner = owner;
+    this._license = owner as SecureLicense;
+    this._flagNames.Changed += new CollectionEventHandler(this.method_2439);
+}
+
+
+class name: SecureLicenseContext
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+public bool CheckSerialNumber(string serialNumber, SerialNumberInfo sni, out int seed, out byte[] data)
+{
+    data = null;
+    seed = -1;
+    if (serialNumber == null)
+    {
+        return false;
+    }
+    byte[] buffer = this.method_2299(serialNumber, null, sni, new CodeAlgorithm[] { sni.Algorithm });
+    if (buffer == null)
+    {
+        return this.method_2300();
+    }
+    if (buffer.Length < 4)
+    {
+        return this.method_2300();
+    }
+    int num = buffer[3];
+    buffer[3] = 0;
+    if (num != (Class_197.method_1996(buffer, 0, 3) & 0xff))
+    {
+        return this.method_2300();
+    }
+    if (buffer.Length > 4)
+    {
+        data = new byte[buffer.Length - 4];
+        Array.Copy(buffer, 4, data, 0, data.Length);
+    }
+    seed = BitConverter.ToInt32(buffer, 0);
+    if (seed > 0xffffff)
+    {
+        return this.method_2300();
+    }
+    if ((seed < sni.MinSeed) || (seed > sni.MaxSeed))
+    {
+        return this.method_2300();
+    }
+    if (((seed - sni.MinSeed) % sni.Step) != 0)
+    {
+        return this.method_2300();
+    }
+    this.field_1086 = 0;
+    return this.method_2301();
+}
+
+ 
+

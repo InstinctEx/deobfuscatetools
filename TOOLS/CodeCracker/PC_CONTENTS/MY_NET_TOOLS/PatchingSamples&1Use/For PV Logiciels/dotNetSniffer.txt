@@ -1,0 +1,32 @@
+dotNetSniffer
+search for 23640679 in memory
+0047D1E0  23 64 06 79                                      #dy
+
+Hardware on acces to this
+
+0045574C    8B4D A8         MOV ECX,DWORD PTR SS:[EBP-58]
+0045574F    51              PUSH ECX
+00455750    8B55 9C         MOV EDX,DWORD PTR SS:[EBP-64]
+00455753    52              PUSH EDX
+00455754    E8 37B4FFFF     CALL 00450B90                            ; dotNetSn.00450B90
+00455759    8B45 10         MOV EAX,DWORD PTR SS:[EBP+10]
+
+004556C5  JMP SHORT 004556D4 ; place breakpoint here
+
+The best way is to place breakpoints on
+004556D4    MOV DWORD PTR SS:[EBP-4],-1 ; place breakpoint here
+004556DB    CALL 004556E5                            ; dotNetSn.004556E5
+004556E0    JMP 004557D4                             ; dotNetSn.004557D4
+
+Easy way:
+Write a tools in MASM which will write method body to a file
+in the format Index: number body bytes!
+
+
+Breakpoint Togle if something else don't work!!!
+
+one signature:
+05 07 01 12 81 2D
+
+Entry point:
+06000029

@@ -1,0 +1,235 @@
+System.Windows.Forms.dll!ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop+0x402
+System.Windows.Forms.dll!ThreadContext.RunMessageLoopInner+0x16c
+System.Windows.Forms.dll!ThreadContext.RunMessageLoop+0x61
+System.Windows.Forms.dll!System.Windows.Forms.Application.RunDialog+0x33
+System.Windows.Forms.dll!System.Windows.Forms.Form.ShowDialog+0x38f
+CodeSmith.Engine.dll!#kxc.#C4c.#kXc+0x271
+CodeSmith.Engine.dll!#kxc.#IXc.#kXc+0x28
+CodeSmith.Engine.dll!#kxc.#IXc.#oXc+0x1e3
+CodeSmith.Engine.dll!#kxc.#IXc.#oXc+0x20
+CodeSmith.Engine.dll!#kxc.#a3c.#Q2c+0x8f
+CodeSmith.Engine.dll!#kxc.#a3c.#42c+0x18
+System.Windows.Forms.dll!System.Windows.Forms.Control.OnClick+0x70
+System.Windows.Forms.dll!System.Windows.Forms.Button.OnClick+0xa2
+System.Windows.Forms.dll!System.Windows.Forms.Button.OnMouseUp+0xac
+CodeSmith.Engine.dll!CodeSmith.Engine.Licensing.SkinnedButton.#6j+0x38
+System.Windows.Forms.dll!System.Windows.Forms.Control.WmMouseUp+0x2d1
+System.Windows.Forms.dll!System.Windows.Forms.Control.WndProc+0x93a
+System.Windows.Forms.dll!System.Windows.Forms.ButtonBase.WndProc+0x127
+System.Windows.Forms.dll!System.Windows.Forms.Button.WndProc+0x20
+CodeSmith.Engine.dll!CodeSmith.Engine.Licensing.SkinnedButton.WndProc+0x74
+System.Windows.Forms.dll!ControlNativeWindow.OnMessage+0x13
+System.Windows.Forms.dll!ControlNativeWindow.WndProc+0x31
+System.Windows.Forms.dll!System.Windows.Forms.NativeWindow.Callback+0x96
+[Unmanaged to Managed Transition]
+USER32.dll+0x8734
+USER32.dll+0x8816
+USER32.dll+0x89cd
+USER32.dll+0x8a10
+[Native Frame: IL Method without Metadata]
+[Managed to Unmanaged Transition]
+System.Windows.Forms.dll!ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop+0x287
+System.Windows.Forms.dll!ThreadContext.RunMessageLoopInner+0x16c
+System.Windows.Forms.dll!ThreadContext.RunMessageLoop+0x61
+System.Windows.Forms.dll!System.Windows.Forms.Application.RunDialog+0x33
+System.Windows.Forms.dll!System.Windows.Forms.Form.ShowDialog+0x38f
+System.Windows.Forms.dll!System.Windows.Forms.Form.ShowDialog+0x7
+CodeSmith.Engine.dll!#kxc.#hIc.#1Dc+0x28a
+CodeSmith.Engine.dll!#kxc.#hIc.#1Dc+0xb6
+CodeSmith.Engine.dll!CodeSmith.Engine.Licensing.SuperFormLimit.#1Dc+0x15
+CodeSmith.Engine.dll!#kxc.#ied.#ZDc+0x1c
+CodeSmith.Engine.dll!#kxc.#ied.Validate+0x50
+CodeSmith.Engine.dll!CodeSmith.Engine.Licensing.LimitCollection.Validate+0x6d
+CodeSmith.Engine.dll!CodeSmith.Engine.Licensing.SecureLicense.Validate+0x81c
+CodeSmith.Engine.dll!#kxc.#cMc.#ILc+0x210
+CodeSmith.Engine.dll!#kxc.#cMc.#FLc+0x74e
+CodeSmith.Engine.dll!#kxc.#cMc.#rLc+0x683
+CodeSmith.Engine.dll!#kxc.#cMc.#sLc+0x37e
+CodeSmith.Engine.dll!#kxc.#cMc.#oLc+0x58
+CodeSmith.Engine.dll!#kxc.#cMc.Validate+0x4a
+CodeSmith.Engine.dll!CodeSmith.Engine.CodeSmithLicense.#Dud+0x1ce
+CodeSmith.Engine.dll!CodeSmith.Engine.CodeSmithLicense.#Dud+0x4d
+CodeSmith.Engine.dll!CodeSmith.Engine.CodeSmithLicense.#FHc+0x65
+CodeSmith.Engine.dll!CodeSmith.Engine.CodeSmithLicense.IsAnyEdition+0x2c
+CodeSmith.exe!CodeSmith.EntryPoint.Go+0x60
+CodeSmith.exe!CodeSmith.EntryPoint.Main+0x4a
+[Unmanaged to Managed Transition]
+clr.dll+0x21db
+clr.dll+0x24a2a
+clr.dll+0x24bcc
+clr.dll+0x24c01
+clr.dll+0x24c21
+clr.dll+0xece82
+clr.dll+0xecf90
+clr.dll+0xecda4
+clr.dll+0xed199
+clr.dll+0xed09a
+clr.dll+0x16af00
+mscoreei.dll+0x55ab
+mscoree.dll+0x7f16
+mscoree.dll+0x4de3
+
+
+public bool #MHc(string #cDc, SerialNumberInfo #IHc, out int #NHc, out byte[] #4T);
+Declaring Type: #kxc.#hIc 
+Assembly: CodeSmith.Engine, Version=6.0.0.0 
+
+public bool #MHc(string #cDc, SerialNumberInfo #IHc, out int #NHc, out byte[] #4T)
+{
+    #4T = null;
+    #NHc = -1;
+    if (#cDc == null)
+    {
+        return false;
+    }
+
+ 
+Type of value	CodeSmith.Engine.Licensing.CodeAlgorithm
+System.Enum.ToString()	"Advanced"
+
+CharacterSet	"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+DefaultCharacterSet	"U9VWT2FG3Q7RS0AC1DEYMNX6P8HJ4KL5"
+
+Prefix	"CS65T-"
+
+
+[0]	"Full Trial"
+[1]	"F1" - "F7"
+
+
+
+
+private byte[] #HHc(string #Kz, string #cDc, SerialNumberInfo #IHc, params CodeAlgorithm[] #JHc);
+Declaring Type: #kxc.#hIc 
+Assembly: CodeSmith.Engine, Version=6.0.0.0 
+
+...
+private byte[] #HHc(string #Kz, string #cDc, SerialNumberInfo #IHc, params CodeAlgorithm[] #JHc)
+{
+    byte[] buffer5;
+    byte num8;
+    #ghd.#Wgd(#Kz, "code");
+    #ghd.#Wgd(#IHc, "sni");
+    Thread.Sleep(this.#TFc);
+    #Kz = #Kz.Trim();
+    if (#Kz.Length < 4)  // serial number lenght!
+    {
+        return null;
+    }
+    if (#cDc != null)
+    {
+        #cDc = #cDc.Trim();
+        if (#cDc.Length == 0)
+        {
+            #cDc = null;
+        }
+        else
+        {
+            #cDc = #cDc.ToUpper();
+        }
+    }
+    StringBuilder builder = new StringBuilder(#Kz);
+    string strA = #IHc.#bEc();  // get serial prefix!
+    if ((strA == null) || (strA.IndexOf('-') == -1))
+    {
+        builder.Replace("-", "");
+    }
+    if ((strA != null) && (string.Compare(strA, 0, builder.ToString(), 0, strA.Length, true) != 0))
+    {
+        return null;
+    }
+    if (strA != null)
+    {
+        builder.Remove(0, strA.Length);
+        if (strA.IndexOf('-') > -1)
+        {
+            builder.Replace("-", "");
+        }
+    }
+    if (builder.Length < 3)
+    {
+        return null;
+    }
+    // Array.Reverse(array, 0, char.ToLower(array[array.Length - 1]) % (array.Length - 2));
+    // string str = new string(array);
+    // until now all ok!
+    char[] array = builder.ToString().ToCharArray();  // serial without prefix and "-"
+    Array.Reverse(array, 0, char.ToLower(array[array.Length - 1]) % (array.Length - 2));
+    builder.Length = 0;
+    builder.Append(array);
+    if ((((#JHc != null) && (#JHc.Length == 1)) && (#JHc[0] == CodeAlgorithm.NotSet)) || ((#JHc != null) && (#JHc.Length == 0)))
+    {
+        #JHc = null;
+    }
+--------------------------------------------------------------
+    byte[] destinationArray = new byte[1 + Data.Length];
+    Array.Copy(Data, destinationArray, Data.Length);
+    byte num = (byte) Utils.Crc16(destinationArray, 0, destinationArray.Length - 1);
+    destinationArray[destinationArray.Length - 1] = num;
+    destinationArray = customCodeSupport.MakeCode(destinationArray);
+-----------------------------------------------------------------------
+...
+A_0	"9WSUVV3DDVDXF2DDS26GQCM5C7Q4"
+A_1	"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+
+  public static byte[] smethod_4(string string_4, string string_5, int int_1)
+        {
+
+    byte[] buffer = #Emd.#mmd(builder.ToString(), str2);
+    if (str2[#Emd.#tmd(buffer) % (str2.Length - 1)] != ch)
+    {
+        return null;
+    }
+
+
+---
+Finnaly the decrypt:
+
+private byte[] #eIc(byte[] #Kz, #hIc #gd);
+ 
+Declaring Type: #kxc.#hIc 
+Assembly: CodeSmith.Engine, Version=6.0.0.0 
+
+ 
+
+                ldc.i4.s 0x10
+                newarr [mscorlib]System.Byte
+                callvirt instance void [mscorlib]System.Security.Cryptography.SymmetricAlgorithm::set_IV(uint8[])
+                ldloc.2
+                ldarg.0
+                ldfld uint8[] #kxc.#hIc::#qFc
+                callvirt instance void [mscorlib]System.Security.Cryptography.SymmetricAlgorithm::set_Key(uint8[])
+
+
+
+
+private byte[] #eIc(byte[] #Kz, #hIc #gd)
+{
+    byte[] buffer;
+    using (MemoryStream stream = new MemoryStream())
+    {
+        using (SymmetricAlgorithm algorithm = #eod.#9nd(false))
+        {
+            using (SymmetricAlgorithm algorithm2 = #eod.#9nd(false))
+            {
+                algorithm2.IV = new byte[0x10];
+                algorithm2.Key = this.#qFc;
+                algorithm.Key = algorithm2.CreateDecryptor().TransformFinalBlock(this.#mFc, 0, this.#mFc.Length);
+            }
+            algorithm.IV = new byte[0x10];
+            using (CryptoStream stream2 = new CryptoStream(stream, algorithm.CreateDecryptor(), CryptoStreamMode.Write))
+            {
+                stream2.Write(#Kz, 0, #Kz.Length);
+                stream2.Flush();
+                stream2.FlushFinalBlock();
+                stream.Flush();
+                algorithm.Clear();
+                stream2.Clear();
+            }
+            buffer = stream.ToArray();
+        }
+    }
+    return buffer;
+}
+
+ 

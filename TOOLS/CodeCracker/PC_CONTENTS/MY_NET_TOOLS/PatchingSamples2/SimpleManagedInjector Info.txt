@@ -1,0 +1,4 @@
+File name: AssemblyLoad.exe
+Class name: AssemblyLoad.MyClass
+Method name: MyMethod
+

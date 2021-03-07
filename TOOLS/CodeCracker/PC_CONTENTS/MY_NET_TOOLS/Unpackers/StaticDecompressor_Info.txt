@@ -1,0 +1,26 @@
+Input file can be either a binary file or a .NET assembly;
+if is a .NET assembly will try to decompress all resource stream and if decompression is ok will save them to a file. 
+
+Suported packers:
+.NETZ (ZIP)
+Sixxpack (LZMA)
+mpress (Lzmat)
+Exepack (Deflate)
+...
+
+
+Suported compressions:
+LZMA
+QuickLZ
+LZMAT
+Aced
+ZIP
+Deflate
+GZIP
+
+dotpack beta 1 (Deflate)
+
+[PC Guard for .NET]
+PC Guard for .NET V5.06.0400
+
+http://daeken.com/dotpack-beta-1

@@ -1,0 +1,11 @@
+    L_0000: ldarg.0  // 02
+    L_0001: ldc.i4.s 0x18 // 1f18
+    L_0003: call int32 A.Class11::smethod_0(int32) // 2886000006
+    L_0008: call instance void [Microsoft.VisualBasic]Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase::.ctor(valuetype [Microsoft.VisualBasic]Microsoft.VisualBasic.ApplicationServices.AuthenticationMode) // 28ae00000a
+    L_000d: ldarg.0  // 02
+
+The problem is that before call is 18 (ldc.i4.2)
+the solution is to check first for ldc.i4.s
+before ldc.i4.2 test!
+
+

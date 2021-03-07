@@ -1,0 +1,26 @@
+ManagedDllInjector
+
+Known limitation:
+The target process must a window!
+
+This program has two options:
+1. Inject the current assembly itself on selected process
+Inject button.
+Look on the code InjectedClass.cs
+and you will see the code that load an assembly:
+    	// Here load the assembly from string
+    	Assembly asm = Assembly.Load("SSA.Business.Input, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a58bfd68363575ef");
+    	if (asm==null)
+    	{
+    	MessageBox.Show("Failed to load assembly!");
+    	}
+       	else
+    	{
+    	MessageBox.Show("Loaded ok!");
+    	}
+You can add here asm = Assembly.Load("assemly string")
+to load more assemblies.
+2. ManagedStack explorer of the selected process,
+shown with a MessageBox.
+ManagedStack button.
+

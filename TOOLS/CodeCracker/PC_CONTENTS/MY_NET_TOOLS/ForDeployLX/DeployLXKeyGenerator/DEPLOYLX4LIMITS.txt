@@ -1,0 +1,68 @@
+Class name: DeployLX.Licensing.v4.SecureLicense 
+private ValidationResult method_8(SecureLicenseContext secureLicenseContext_0, string string_7)
+{
+    if (!secureLicenseContext_0.CheckSerialNumber(string_7, this.serialNumberInfo_0, out this.serialNumberInfo_0._seed, out this.byte_1))
+    {
+        return secureLicenseContext_0.ReportError("E_InvalidSerialNumber", this, new object[] { string_7 });
+    }
+    if (((this.serialNumberInfo_0._seed < this.serialNumberInfo_0.MinSeed) || (this.serialNumberInfo_0._seed > this.serialNumberInfo_0.MaxSeed)) || (((this.serialNumberInfo_0._seed - this.serialNumberInfo_0.MinSeed) % this.serialNumberInfo_0.Step) != 0))
+    {
+        return secureLicenseContext_0.ReportError("E_InvalidSerialNumber", this, new object[] { string_7 });
+    }
+    string[] sourceArray = this.method_19(null, "INITIALIZEDSERIALS", PersistentDataLocationType.SharedOrUser) as string[];
+    if (sourceArray != null)
+    {
+        foreach (string str in sourceArray)
+        {
+            if (string.Compare(str, string_7, true) == 0)
+            {
+                if (string_7 != this.serialNumberInfo_0.SerialNumber)
+                {
+                    this.bool_11 = true;
+                }
+                return ValidationResult.Valid;
+            }
+        }
+    }
+    byte[] buffer = this.byte_1;
+    if (buffer != null)
+    {
+        for (int i = 1; i < buffer.Length; i += 4)
+        {
+            if (((buffer[i] != 0) || (buffer[i + 1] != 0)) || ((buffer[i + 2] != 0) || (buffer[i + 3] != 0)))
+            {
+                Limit limit = this.Limits.FindLimitByOrdinal(buffer[i + 3] >> 3);
+                if (!(limit is IExtendableLimit))
+                {
+                    return secureLicenseContext_0.ReportError("E_CouldNotInitializeFromSerialNumber", this, new object[0]);
+                }
+                if (!((IExtendableLimit) limit).InitializeFromSerialNumber(secureLicenseContext_0, string_7, i))
+                {
+                    return secureLicenseContext_0.ReportError("E_CouldNotInitializeFromSerialNumber", this, new object[0]);
+                }
+            }
+        }
+    }
+    if (sourceArray == null)
+    {
+        this.method_36(null, "INITIALIZEDSERIALS", new string[] { string_7 }, PersistentDataLocationType.SharedOrUser);
+    }
+    else
+    {
+        string[] destinationArray = new string[sourceArray.Length + 1];
+        Array.Copy(sourceArray, destinationArray, sourceArray.Length);
+        destinationArray[destinationArray.Length - 1] = string_7;
+        this.method_36(null, "INITIALIZEDSERIALS", destinationArray, PersistentDataLocationType.SharedOrUser);
+    }
+    if (string_7 != this.serialNumberInfo_0.SerialNumber)
+    {
+        this.bool_11 = true;
+    }
+    return ValidationResult.Valid;
+}
+
+this.Limits has the type DeployLX.Licensing.v4.LimitCollection!
+
+So this call public Limit FindLimitByOrdinal(int ordinal)
+from class DeployLX.Licensing.v4.LimitCollection
+
